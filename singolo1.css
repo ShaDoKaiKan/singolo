@@ -1,0 +1,240 @@
+body {
+    max-width: 1020px;
+    max-height: 1195px;
+}
+
+/*---------------------------------HEADER--------------------------*/
+.header {
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+    display: flex;
+}
+
+.logo {
+    /*font-size: 18.0448pt;*/
+    width: 120px;
+    height: 25px;
+    padding: 34px 0 0 40px;
+}
+
+.logo h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18.1048pt; 
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+
+
+.logo span {
+    color: #f06c64;
+}
+
+/*---------------------------------NAVIGATION--------------------------*/
+.nav {
+    width: 371px;
+    height: 12px;
+    padding: 45px 0 0 449px;
+}
+
+.nav ul {
+    display: flex;  
+    height: 12px;
+    width: 371px;
+    justify-content: space-between; 
+}
+
+.nav ul li {
+    font-size: 9pt;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: center;
+    line-height: 9px;   
+}
+
+.nav_home {
+    display: flex;
+    color: #f06c64;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.nav_others {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.nav_others:active {
+    color: #f06c64;
+}
+
+.nav span {
+    font-size: 8.65655pt;
+    color: #494e62;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 13px;
+}
+
+/*---------------------------------HEADER BOTTOM--------------------------*/
+.header__bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+/*---------------------------------SLIDER--------------------------*/
+.slider {
+    width: 1020px;
+    height: 594px;
+    background-color: #f06c64;
+    display: flex;
+
+}
+
+.chev_left {
+    width: 16px;
+    height: 27px;
+    padding: 281px 0 0 42px;
+}
+
+.chev_left img:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease;
+}
+
+.chev_left img:active {
+    transform: scale(1, 1);
+    transition: ease;
+}
+
+.Viphone {
+    width: 242px;
+    height: 483px;
+    padding: 53px 0 0 53px;
+}
+
+.Hiphone {
+    width: 485px;
+    height: 240px; 
+    padding: 174px 0 0 71px;
+}
+
+.chev_right {
+    width: 16px;
+    height: 27px;
+    padding: 281px 0 0 55px;
+}
+
+.chev_right img:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease;
+}
+
+.chev_right img:active {
+    transform: scale(1, 1);
+    transition: ease;
+}
+
+/*---------------------------------SLIDER BOTTOM--------------------------*/
+.slider__bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+/*---------------------------------SERVICES--------------------------*/
+.services {
+    display: flex;
+    flex-direction: column;
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
+}
+
+.preview {
+    width: 939px;
+    padding: 68px 0 0 41px;
+}
+
+.preview h1 {
+    font-size: 30px;
+    line-height: 18px;
+    letter-spacing: -0.3pt;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 0 0 27px 0;
+}
+
+.preview p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.1pt;
+    line-height: 1.71em;
+}
+
+.container {
+    display: flex;
+    width: 939px;
+    padding: 50px 0 0 41px;
+}
+
+.colomn {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 0;
+}
+
+.block {
+   display: flex;
+   width: 299px;
+   height: 86px;
+   padding: 0 0 37px 0;
+}
+
+.block img {
+    width: 60px;
+    height: 60px;
+    padding: 0 20px 0 0;
+}
+
+.text h2{
+    font-size: 18px;
+    line-height: 11pt;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    padding: 0 0 15px 0;
+    letter-spacing: -0.1pt;
+}
+
+.text p {
+    width: 220px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 15pt;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    
+}
+
+/*---------------------------------SERVICES BOTTOM--------------------------*/
+.services__bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
