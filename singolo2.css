@@ -1,0 +1,217 @@
+body {
+    max-width: 1020px;
+    max-height: 1195px;
+}
+
+/*--------------- PORTFOLIO---------------------*/
+.portfolio {
+    height: 870px;
+    width: 1020px;
+    background-color: #2d303a;
+}
+
+.contentP {
+    height: 864px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentP h1 {
+    height: 23px;
+    width: 121px;
+    font-size: 30px;
+    line-height: 32px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 62px 0 0 40px;
+}
+
+.contentP p {
+    width: 682px;
+    height: 17px;
+    font-size: 18px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    line-height: 30px;
+    padding: 29px 0 0 40px;
+}
+
+.nav {
+    width: 288px;
+    padding: 24px 0 0 41px;
+}
+
+.nav ul {
+    display: flex;
+    height: 23px;
+    justify-content: space-between;
+}
+
+.nav ul li a {
+    display: block;
+    height: 21px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    line-height: 20px;
+    padding: 0 6px 0 7px;
+    font-size: 12px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.all {
+    color: #dedede;
+    border-color: #dedede;   
+}
+
+.others {
+    color: #767e9e;
+}
+
+.nav a:hover {
+    color: #dedede;
+    border-color: #dedede;
+}
+
+.nav a:active {
+    transform: scale(0.95, 0.95);
+    transition: ease;
+}
+
+
+.imagesP {
+    max-width: 940px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 41px;
+}
+
+.imagesP:nth-child(n+13) {
+    display: none;
+}
+
+.imagesP img {
+    margin-top: 19px;
+    width: 220px;
+    height: 187px;
+}
+
+.portf_bottom {
+    height: 6px;
+    width: 1020px;
+    background-color: #323746;
+}
+
+/*----------------- ABOUT US---------------------*/
+.about_us {
+    width: 1020px;
+    height: 730px;
+    background-color: #f2f2f2;
+}
+
+.contentA {
+    height: 728px;
+}
+
+.contentA h1 {
+    height: 23px;
+    width: 129px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 68px 0 0 40px;
+}
+
+.contentA p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    padding: 22px 0 0 40px;
+}
+
+.contacts {
+    width: 940px;
+    display: flex;
+    margin-top: 49px;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+
+.contacts img {
+    width: 300px;
+    height: 300px;
+}
+
+.contacts h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-top: 13px;
+}
+
+.contacts p {
+    width: 304px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 0 0 0;
+}
+
+.adam {
+    width: 301px;
+}
+
+.desmond {
+    width: 304px;
+}
+
+.scolara {
+    width: 300px;
+}
+
+.social {
+    margin-top: 34px;
+}
+
+.social img {
+    margin-right: 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.social img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.social img:active {
+    transform: scale(0.9, 0.9);
+    transition: ease;
+}
+
+.about_bottom {
+    height: 4px;
+    width: 1020px;
+    background-color: #ffffff;      
+}
