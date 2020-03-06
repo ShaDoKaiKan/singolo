@@ -1,0 +1,642 @@
+body {
+    max-width: 1020px;
+}
+
+/*------------------------------SINGOLO 1 --------------------------------*/
+/*HEADER*/
+.headerS1 {
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+    display: flex;
+}
+
+.logoS1 {
+    width: 120px;
+    height: 25px;
+    padding: 34px 0 0 40px;
+}
+
+.logoS1 h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18.1048pt; 
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+
+
+.logoS1 span {
+    color: #f06c64;
+}
+
+/*NAVIGATION*/
+.navS1 {
+    width: 371px;
+    height: 12px;
+    padding: 45px 0 0 449px;
+}
+
+.navS1 ul {
+    display: flex;  
+    height: 12px;
+    width: 371px;
+    justify-content: space-between; 
+}
+
+.navS1 ul li {
+    font-size: 9pt;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: center;
+    line-height: 9px;   
+}
+
+.nav_homeS1 {
+    display: flex;
+    color: #f06c64;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.nav_othersS1 {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.nav_othersS1:active {
+    color: #f06c64;
+}
+
+.navS1 span {
+    font-size: 8.65655pt;
+    color: #494e62;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 13px;
+}
+
+/*HEADER BOTTOM*/
+.header__bottomS1 {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+/*SLIDER*/
+.sliderS1 {
+    width: 1020px;
+    height: 594px;
+    background-color: #f06c64;
+    display: flex;
+
+}
+
+.chev_leftS1 {
+    width: 16px;
+    height: 27px;
+    padding: 281px 0 0 42px;
+}
+
+.chev_leftS1 img:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease;
+}
+
+.chev_leftS1 img:active {
+    transform: scale(1, 1);
+    transition: ease;
+}
+
+.ViphoneS1 {
+    width: 242px;
+    height: 483px;
+    padding: 53px 0 0 53px;
+}
+
+.HiphoneS1 {
+    width: 485px;
+    height: 240px; 
+    padding: 174px 0 0 71px;
+}
+
+.chev_rightS1 {
+    width: 16px;
+    height: 27px;
+    padding: 281px 0 0 55px;
+}
+
+.chev_rightS1 img:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease;
+}
+
+.chev_rightS1 img:active {
+    transform: scale(1, 1);
+    transition: ease;
+}
+
+/*SLIDER BOTTOM*/
+.slider__bottomS1 {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+/*SERVICES*/
+.servicesS1 {
+    display: flex;
+    flex-direction: column;
+    width: 1020px;
+    height: 494px;
+    background-color: #f2f2f2;
+}
+
+.previewS1 {
+    width: 939px;
+    padding: 68px 0 0 41px;
+}
+
+.previewS1 h1 {
+    font-size: 30px;
+    line-height: 18px;
+    letter-spacing: -0.3pt;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 0 0 27px 0;
+}
+
+.previewS1 p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.1pt;
+    line-height: 1.71em;
+}
+
+.containerS1 {
+    display: flex;
+    width: 939px;
+    padding: 50px 0 0 41px;
+}
+
+.colomnS1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 0;
+}
+
+.blockS1 {
+   display: flex;
+   width: 299px;
+   height: 86px;
+   padding: 0 0 37px 0;
+}
+
+.blockS1 img {
+    width: 60px;
+    height: 60px;
+    padding: 0 20px 0 0;
+}
+
+.textS1 h2{
+    font-size: 18px;
+    line-height: 11pt;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    padding: 0 0 15px 0;
+    letter-spacing: -0.1pt;
+}
+
+.textS1 p {
+    width: 220px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 15pt;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    
+}
+
+/*SERVICES BOTTOM*/
+.services__bottomS1 {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+/*------------------------------SINGOLO 2 --------------------------------*/
+/*--------------- PORTFOLIO---------------------*/
+.portfolioS2 {
+    height: 863px;
+    width: 1020px;
+    background-color: #2d303a;
+}
+
+.contentPS2 {
+    height: 864px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentPS2 h1 {
+    height: 23px;
+    width: 121px;
+    font-size: 30px;
+    line-height: 32px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 61px 0 0 40px;
+}
+
+.contentPS2 p {
+    width: 685px;
+    height: 17px;
+    font-size: 18px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    line-height: 30px;
+    padding: 29px 0 0 40px;
+}
+
+.navS2 {
+    width: 288px;
+    padding: 24px 0 0 41px;
+}
+
+.navS2 ul {
+    display: flex;
+    height: 23px;
+    justify-content: space-between;
+}
+
+.navS2 ul li a {
+    display: block;
+    height: 21px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    line-height: 20px;
+    padding: 0 6px 0 7px;
+    font-size: 12px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.allS2 {
+    color: #dedede;
+    border-color: #dedede;   
+}
+
+.othersS2 {
+    color: #767e9e;
+}
+
+.navS2 a:hover {
+    color: #dedede;
+    border-color: #dedede;
+}
+
+.navS2 a:active {
+    transform: scale(0.95, 0.95);
+    transition: ease;
+}
+
+
+.imagesPS2 {
+    max-width: 940px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 41px;
+}
+
+.imagesPS2:nth-child(n+13) {
+    display: none;
+}
+
+.imagesPS2 img {
+    margin-top: 19px;
+    width: 220px;
+    height: 187px;
+}
+
+.portf_bottomS2 {
+    height: 6px;
+    width: 1020px;
+    background-color: #323746;
+}
+
+/*----------------- ABOUT US---------------------*/
+.about_usS2 {
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+}
+
+.contentAS2 {
+    height: 728px;
+}
+
+.contentAS2 h1 {
+    height: 23px;
+    width: 129px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 68px 0 0 40px;
+}
+
+.contentAS2 p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    padding: 22px 0 0 40px;
+}
+
+.contactsS2 {
+    width: 940px;
+    display: flex;
+    margin-top: 49px;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+
+.contactsS2 img {
+    width: 300px;
+    height: 300px;
+}
+
+.contactsS2 h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-top: 13px;
+}
+
+.contactsS2 p {
+    width: 304px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    padding: 10px 0 0 0;
+}
+
+.adamS2 {
+    width: 301px;
+}
+
+.desmondS2 {
+    width: 304px;
+}
+
+.scolaraS2 {
+    width: 300px;
+}
+
+.socialS2 {
+    margin-top: 34px;
+}
+
+.socialS2 img {
+    margin-right: 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.socialS2 img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.socialS2 img:active {
+    transform: scale(0.9, 0.9);
+    transition: ease;
+}
+
+.about_bottomS2 {
+    height: 6px;
+    width: 1020px;
+    background-color: #ffffff;      
+}
+/*------------------------------SINGOLO 3 --------------------------------*/
+
+.quoteS3 {
+    width: 1020px;
+    height: 648px;
+    background-color: #f06c64;
+}
+
+.quoteS3 h1 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 68px 0 0 40px;
+}
+
+.quoteS3 p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    padding: 27px 0 0 40px;
+}
+
+.contentS3 {
+    display: flex;
+    width: 940px;
+    margin-top: 47px;
+    margin-left: 40px;
+}
+
+.formS3 {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    padding: 4px 0 14px 12px;
+}
+
+.formS3 input {
+    width: 615px;
+    height: 33px;
+    border-radius: 5px;
+    border-color: #d6564f;
+    background-color: #d6564f;
+    margin-bottom: 15px;
+    border-style: solid;
+}
+
+.formS3 textarea {
+    width: 613px;
+    height: 197px;
+    border-radius: 5px;
+    border-color: #d6564f;
+    background-color: #d6564f;
+}
+
+.formS3 button {
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    border-color: #f0d8d9;
+    background-color: #d6564f;
+    font-size: 15px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    border-style: solid;
+    margin-top: 14px;
+}
+
+.formS3 button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.formS3 button:active {
+    transform: scale(0.9, 0.9);
+    transition: ease;
+}
+
+.contactS3 {
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.contactS3 h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contactS3 p {
+    width: 302px;
+    height: 90px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    padding: 0;
+    margin-bottom: 17px;
+}
+
+.contactS3 ul li a {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+}
+
+.contactS3 ul li a:active {
+    color: blue;
+}
+
+.locationS3 {
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+.bg_bottomS3 {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+.footerS3 {
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+    justify-content: space-between;
+}
+
+.footer_contactsS3 {
+    display: flex;
+    width: 940px;
+    height: 34px;
+    justify-content: space-between;
+    margin-left: 40px;
+    padding-top: 23px;
+}
+
+.footerS3 p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.socialS3 {
+    display: flex;
+    width: 152px;
+    justify-content: inherit;
+}
+
+.socialS3 img {
+    width: 32px;
+    height: 32px;
+}
+
+a:active {
+    transform: scale(0.9, 0.9);
+    transition: ease;
+}
