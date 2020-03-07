@@ -71,6 +71,10 @@ body {
     color: #f06c64;
 }
 
+.nav_othersS1:hover{
+    color: #f06c64;
+}
+
 .navS1 span {
     font-size: 8.65655pt;
     color: #494e62;
@@ -182,6 +186,9 @@ body {
     text-align: left;
     letter-spacing: 0.1pt;
     line-height: 1.71em;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .containerS1 {
@@ -217,6 +224,9 @@ body {
     font-weight: 900;
     padding: 0 0 15px 0;
     letter-spacing: -0.1pt;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .textS1 p {
@@ -228,7 +238,8 @@ body {
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-    
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /*SERVICES BOTTOM*/
@@ -419,12 +430,30 @@ body {
     width: 301px;
 }
 
+h2.adam {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .desmondS2 {
     width: 304px;
 }
 
+h2.desmond {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .scolaraS2 {
     width: 300px;
+}
+
+h2.scolara {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .socialS2 {
@@ -638,5 +667,10 @@ body {
 
 a:active {
     transform: scale(0.9, 0.9);
+    transition: ease;
+}
+
+a:hover {
+    transform: scale(1.1, 1.1);
     transition: ease;
 }
