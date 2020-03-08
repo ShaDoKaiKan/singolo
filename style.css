@@ -39,7 +39,7 @@
 .navS1 {
     width: 371px;
     height: 12px;
-    padding: 45px 0 0 449px;
+    padding: 44px 0 0 450px;
 }
 
 .navS1 ul {
@@ -203,6 +203,7 @@
 
 .container{
     display: flex;
+    width: 1020px;
 }
 
 .colomnS1 {
@@ -221,7 +222,7 @@
 .blockS1 img {
     width: 60px;
     height: 60px;
-    padding: 0 20px 0 0;
+    padding: 0 20px 4px 0;
 }
 
 .textS1 h2{
@@ -230,7 +231,7 @@
     color: #666d89;
     font-family: "Lato";
     font-weight: 900;
-    padding: 0 0 15px 0;
+    padding: 0 0 15px 1px;
     letter-spacing: -0.1pt;
     text-align: justify;
     overflow: hidden;
@@ -238,7 +239,7 @@
 }
 
 .textS1 p {
-    width: 220px;
+    width: 219px;
     height: 54px;
     font-size: 12px;
     line-height: 15pt;
@@ -340,11 +341,12 @@
 
 
 .imagesPS2 {
-    max-width: 940px;
+    max-width: 1020px;
+    width: 1020px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+   
     margin-left: 41px;
 }
 
@@ -354,6 +356,7 @@
 
 .imagesPS2 img {
     margin-top: 19px;
+    margin-right: 20px;
     width: 220px;
     height: 187px;
 }
@@ -648,7 +651,7 @@ h2.scolara {
     height: 34px;
     justify-content: space-between;
     margin-left: 40px;
-    padding-top: 23px;
+    padding-top: 22px;
 }
 
 .footerS3 p {
@@ -663,13 +666,13 @@ h2.scolara {
 
 .socialS3 {
     display: flex;
-    width: 152px;
+    width: 154px;
     justify-content: inherit;
 }
 
 .socialS3 img {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 33px;
 }
 
 a:active {
