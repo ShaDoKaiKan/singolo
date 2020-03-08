@@ -1,11 +1,15 @@
-body {
-    max-width: 1020px;
+
+.wrapper {
+    width: 1020px;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /*------------------------------SINGOLO 1 --------------------------------*/
 /*HEADER*/
 .headerS1 {
-    width: 1020px;
+    
     height: 89px;
     background-color: #2d303a;
     display: flex;
@@ -86,18 +90,20 @@ body {
 
 /*HEADER BOTTOM*/
 .header__bottomS1 {
-    width: 1020px;
+    
     height: 6px;
     background-color: #323746;
 }
 
 /*SLIDER*/
 .sliderS1 {
-    width: 1020px;
+    
     height: 594px;
     background-color: #f06c64;
-    display: flex;
+}
 
+.sliderS1 .slider {
+    display: flex;
 }
 
 .chev_leftS1 {
@@ -146,7 +152,7 @@ body {
 
 /*SLIDER BOTTOM*/
 .slider__bottomS1 {
-    width: 1020px;
+    
     height: 6px;
     background-color: #ea676b;
 }
@@ -155,7 +161,6 @@ body {
 .servicesS1 {
     display: flex;
     flex-direction: column;
-    width: 1020px;
     height: 494px;
     background-color: #f2f2f2;
 }
@@ -192,9 +197,12 @@ body {
 }
 
 .containerS1 {
-    display: flex;
     width: 939px;
     padding: 50px 0 0 41px;
+}
+
+.container{
+    display: flex;
 }
 
 .colomnS1 {
@@ -244,7 +252,7 @@ body {
 
 /*SERVICES BOTTOM*/
 .services__bottomS1 {
-    width: 1020px;
+
     height: 6px;
     background-color: #ffffff;
 }
@@ -253,7 +261,7 @@ body {
 /*--------------- PORTFOLIO---------------------*/
 .portfolioS2 {
     height: 863px;
-    width: 1020px;
+
     background-color: #2d303a;
 }
 
@@ -352,13 +360,13 @@ body {
 
 .portf_bottomS2 {
     height: 6px;
-    width: 1020px;
+
     background-color: #323746;
 }
 
 /*----------------- ABOUT US---------------------*/
 .about_usS2 {
-    width: 1020px;
+
     height: 728px;
     background-color: #f2f2f2;
 }
@@ -477,13 +485,13 @@ h2.scolara {
 
 .about_bottomS2 {
     height: 6px;
-    width: 1020px;
+
     background-color: #ffffff;      
 }
 /*------------------------------SINGOLO 3 --------------------------------*/
 
 .quoteS3 {
-    width: 1020px;
+
     height: 648px;
     background-color: #f06c64;
 }
@@ -623,13 +631,12 @@ h2.scolara {
 }
 
 .bg_bottomS3 {
-    width: 1020px;
+
     height: 6px;
     background-color: #ea676b;
 }
 
 .footerS3 {
-    width: 1020px;
     height: 76px;
     background-color: #2d303a;
     justify-content: space-between;
