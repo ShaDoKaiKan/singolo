@@ -38,6 +38,8 @@ LEFT_ARROW.addEventListener('click', (event) => {
             document.querySelectorAll('.slider').forEach((slider) => {
                 count += 10;
                 slider.style.left = `${count}px`;
+                document.getElementById('sliderS1').style.backgroundColor = '#f06c64';
+                document.getElementById('slider-bt').style.backgroundColor = '#f06c64';
                 if (slider.style.left === '0px') {
                     clearInterval(interval);
                     return;
@@ -51,6 +53,8 @@ LEFT_ARROW.addEventListener('click', (event) => {
             document.querySelectorAll('.slider').forEach((slider) => {
                 count -= 10;
                 slider.style.left = `${count}px`;
+                document.getElementById('sliderS1').style.backgroundColor = '#648bf0';
+                document.getElementById('slider-bt').style.backgroundColor = '#648bf0';
                 if (slider.style.left === '-1020px') {
                     clearInterval(interval);
                     return;
@@ -67,6 +71,8 @@ RIGHT_ARROW.addEventListener('click', (event) => {
             document.querySelectorAll('.slider').forEach((slider) => {
                 count -= 10;
                 slider.style.left = `${count}px`;
+                document.getElementById('sliderS1').style.backgroundColor = '#648bf0';
+                document.getElementById('slider-bt').style.backgroundColor = '#648bf0';
                 if (slider.style.left === '-1020px') {
                     clearInterval(interval);
                     return;
@@ -80,6 +86,8 @@ RIGHT_ARROW.addEventListener('click', (event) => {
             document.querySelectorAll('.slider').forEach((slider) => {
                 count += 10;
                 slider.style.left = `${count}px`;
+                document.getElementById('sliderS1').style.backgroundColor = '#f06c64';
+                document.getElementById('slider-bt').style.backgroundColor = '#f06c64';
                 if (slider.style.left === '0px') {
                     clearInterval(interval);
                     return;

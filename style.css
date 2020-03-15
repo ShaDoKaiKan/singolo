@@ -200,6 +200,7 @@ a.nav_othersS1 {
     flex-shrink: 0;
     position: relative;
     z-index: 10;
+    left: 0;
 }
 
 /*SLIDER BOTTOM*/
