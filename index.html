@@ -9,7 +9,8 @@
     <title>Singolo</title>
 </head>
 
-<body>
+<body id="home">
+
 <!------------------------------------SINGOLO 1 --------------------------------------->
     <header class="headerS1">
         <div class="wrapper">
@@ -19,23 +20,14 @@
                 </div>
                 
                 <nav class="navS1">
-                    <ul>
-                        <li>
-                            <a class="nav_homeS1" href="#">HOME<span>·</span></a>
-                        </li>
-                        <li>
-                            <a class="nav_othersS1" href="#">SERVICES<span>·</span></a>
-                        </li>
-                        <li>
-                            <a class="nav_othersS1" href="#">PORTFOLIO<span>·</span></a>
-                        </li>
-                        <li>
-                            <a class="nav_othersS1" href="#">ABOUT<span>·</span></a>
-                        </li>
-                        <li>
-                            <a class="nav_othersS1" href="#">CONTACT</a>
-                        </li>
-                    </ul>
+                    <div class="menu" id="menu">
+                        <a href="#home" class="nav_othersS1 active" >HOME</a>
+                        <a href="#services" class="nav_othersS1">SERVICES</a>
+                        <a href="#portfolio" class="nav_othersS1">PORTFOLIO</a>
+                        <a href="#about" class="nav_othersS1">ABOUT</a>
+                        <a href="#contact" class="nav_othersS1">CONTACT</a>
+                        
+                    </div>
                 </nav>
             </div>
         </div>
@@ -44,27 +36,41 @@
     </div>
 
     <div class="sliderS1">
-        <div class="wrapper">
-            <div class="slider">
-                <div class="chev_leftS1">
-                    <a href="#"><img src="./assets/images/singolo1/Slider/chev@1X.png" alt="chev_left"></a>
-                </div>     
-                <div class="ViphoneS1">
-                    <img src="./assets/images/singolo1/Slider/iphone_vert.png" alt="Iphone_vertical">
+        <div class="wrapperS1">
+            <div class="chevs">
+                <div class="arrows">
+                    <a href="#" id="left-arrow"><img src="./assets/images/singolo1/Slider/chev@1X.png" alt="chev_left"></a>
                 </div>
-                <div class="HiphoneS1">
-                    <img src="./assets/images/singolo1/Slider/iphone_horiz.png" alt="Iphone_horizontal">
-                </div>
-                <div class="chev_rightS1">
-                    <a href="#"><img src="./assets/images/singolo1/Slider/chev@1X (1).png" alt="chev_right"></a>
+                <div class="arrows">
+                    <a href="#" id="right-arrow"><img src="./assets/images/singolo1/Slider/chev@1X (1).png" alt="chev_right"></a>
                 </div>
             </div>
+            <div class="carousel">
+                <div class="slider">
+                    <div class="ViphoneS1">
+                        <img src="./assets/images/singolo1/Slider/iphone_vert.png" alt="Iphone_vertical">
+                        <img class="black-screen-v" src="./assets/images/singolo1/Slider/Screen.png" alt="black-screen">
+                        <a href="#" class="home-btn-v" id="home-btn-v"><img src="./assets/images/singolo1/Slider/home_btn.png" alt="home-button"></a> 
+                    </div>
+                    <div class="HiphoneS1">
+                        <img src="./assets/images/singolo1/Slider/iphone_horiz.png" alt="Iphone_horizontal">
+                        <img class="black-screen-h" src="./assets/images/singolo1/Slider/Screen.png" alt="black-screen">
+                        <a href="#" class="home-btn-h" id="home-btn-h"><img src="./assets/images/singolo1/Slider/home_btn.png" alt="home-button"></a> 
+                    </div>
+                </div>
+            
+                <div class="slider">
+                    <img src="./assets/images/singolo1/Slider/Slider-2.png" alt="slider2">
+                </div>
+            </div>
+
+            
         </div>   
     </div>
     <div class="slider__bottomS1">
     </div>
 
-    <footer class="servicesS1">
+    <footer id="services" class="servicesS1">
         <div class="wrapper">
                 <div class="previewS1">
                     <h1>Our Services</h1>
@@ -149,7 +155,7 @@
 
 <!----------------------------- SINGOLO 2 ------------------------------------------->
 
-    <div class="portfolioS2">
+    <div id="portfolio" class="portfolioS2">
         <div class="wrapper">
             <div class="container">
                 <div class="contentPS2">
@@ -157,35 +163,29 @@
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor 
                     ligula, eget lacinia odio sem nec elit.</p>
 
-                    <nav class="navS2">
-                        <ul>
-                            <li>
-                                <a class="allS2" href="#">All</a>
-                            </li>
-                            <li>
-                                <a class="othersS2" href="#">Web Design</a>
-                            </li>
-                            <li>
-                                <a class="othersS2" href="#">Graphic Design</a>
-                            </li>
-                            <li>
-                                <a class="othersS2" href="#">Artwork</a>
-                            </li>
-                        </ul>
+                    <nav  class="navS2">
+                        <div class="portfolio-menu" id="portfolio-menu">
+                            <a href="#" class="othersS2 active-portfolio">All</a>                           
+                            <a href="#" class="othersS2">Web Design</a>                          
+                            <a href="#" class="othersS2">Graphic Design</a>
+                            <a href="#" class="othersS2">Artwork</a>
+                        </div>
+                        
                     </nav>
 
-                    <div class="imagesPS2">
-                        <img src="./assets/images/singolo2/portfolio/ship.png" alt="ship">
-                        <img src="./assets/images/singolo2/portfolio/girl.png" alt="girl">
-                        <img src="./assets/images/singolo2/portfolio/white_city.png" alt="white_city">
-                        <img src="./assets/images/singolo2/portfolio/robot.png" alt="robot">
-                        <img src="./assets/images/singolo2/portfolio/rabbits.png" alt="rabbits">
-                        <img src="./assets/images/singolo2/portfolio/green_boxes.png" alt="green_boxes">                    <img src="./assets/images/singolo2/portfolio/eyes.png" alt="eyes">
-                        <img src="./assets/images/singolo2/portfolio/birds.png" alt="birds">
-                        <img src="./assets/images/singolo2/portfolio/green_monster.png" alt="green_monster">
-                        <img src="./assets/images/singolo2/portfolio/text.png" alt="text">                
-                        <img src="./assets/images/singolo2/portfolio/white_monster.png" alt="white_monster">
-                        <img src="./assets/images/singolo2/portfolio/brown.png" alt="brown">               
+                    <div class="imagesPS2" id="images">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/ship.png" alt="ship">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/girl.png" alt="girl">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/white_city.png" alt="white_city">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/robot.png" alt="robot">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/rabbits.png" alt="rabbits">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/green_boxes.png" alt="green_boxes">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/eyes.png" alt="eyes">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/birds.png" alt="birds">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/green_monster.png" alt="green_monster">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/text.png" alt="text">                
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/white_monster.png" alt="white_monster">
+                        <img class="port-img" src="./assets/images/singolo2/portfolio/brown.png" alt="brown">               
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
     <div class="portf_bottomS2"></div>
       
     
-    <div class="about_usS2">
+    <div id="about" class="about_usS2">
         <div class="wrapper">
             <div class="container">
                 <div class="contentAS2">
@@ -253,8 +253,18 @@
     <div class="about_bottomS2"></div>
     
     <!-------------------------------------- SINGOLO 3 ---------------------------------------->
+    
 
     <div class="quoteS3">
+        <div id="message-block" class="hidden">
+            <div id="message">
+                <p>Письмо отправлено <br>
+                Тема: <span id="result1"></span> <br> 
+                Описание: <span id="result2"></span> 
+                </p>
+                <button id="close-btn">OK</button>
+            </div>
+        </div>
         <div class="wrapper">
             <h1>Get a Quote</h1>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris 
@@ -264,14 +274,15 @@
             condimentum nibh.</p>
             <div class="contentS3">
                 <form class="formS3" action="#" method="post">
-                    <input type="text" name="username" placeholder="Name (Required)" required>
-                    <input type="email" name="email-address" placeholder="Email (Required)" required>
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                    <button name="submit">
+                    <input type="text" name="username" placeholder="Name (Required)" id="name" required>
+                    <input type="email" name="email-address" placeholder="Email (Required)" id="email" required>
+                    <input type="text" name="subject" placeholder="Subject" id="subject">
+                    <textarea name="comments" id="describe" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                    <button name="submit" id="btn">
                         <strong>Submit</strong>
                     </button>
                 </form>
+                                
                 <div class="contactS3">
                     <h2>Contact Information</h2>
                     <p>Quisque hendrerit purus dapibus, ornare nibh vitae,
@@ -288,8 +299,9 @@
             </div>
         </div>
     </div>
+    
     <div class="bg_bottomS3"></div>
-    <footer class="footerS3">
+    <footer id="contact" class="footerS3">
         <div class="wrapper">
             <div class="container">
                 <div class="footer_contactsS3">
@@ -304,5 +316,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

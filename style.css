@@ -1,15 +1,21 @@
 
 .wrapper {
     width: 1020px;
-    padding: 0 40px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
 }
 
 /*------------------------------SINGOLO 1 --------------------------------*/
 /*HEADER*/
 .headerS1 {
-    
+    position: sticky;
+    top: 0;
+    z-index: 100;
     height: 89px;
     background-color: #2d303a;
     display: flex;
@@ -36,32 +42,42 @@
 }
 
 /*NAVIGATION*/
+
+a.nav_othersS1.active {
+    color: #f06c64;
+}
+
+a.nav_othersS1:not(.active):hover {
+    cursor: pointer;
+    color: #f06c64;
+}
+
+a.nav_othersS1 {
+    text-decoration: none;
+    font-size: 9pt;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: center;
+    line-height: 9px;
+    color: #ffffff;
+}
+
 .navS1 {
     width: 371px;
     height: 12px;
     padding: 44px 0 0 450px;
 }
 
-.navS1 ul {
+.menu {
     display: flex;  
     height: 12px;
     width: 371px;
     justify-content: space-between; 
-}
-
-.navS1 ul li {
     font-size: 9pt;
     font-family: "Lato";
     font-weight: 700;
     text-align: center;
-    line-height: 9px;   
-}
-
-.nav_homeS1 {
-    display: flex;
-    color: #f06c64;
-    text-decoration: none;
-    justify-content: center;
+    line-height: 9px; 
 }
 
 .nav_othersS1 {
@@ -71,83 +87,119 @@
     justify-content: center;
 }
 
-.nav_othersS1:active {
-    color: #f06c64;
-}
-
-.nav_othersS1:hover{
-    color: #f06c64;
-}
-
-.navS1 span {
-    font-size: 8.65655pt;
+.nav_othersS1:not(:first-child)::before {
+    content: "\2219";
+    margin: 0 13px 0 10px;
     color: #494e62;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 13px;
 }
 
 /*HEADER BOTTOM*/
 .header__bottomS1 {
-    
     height: 6px;
     background-color: #323746;
 }
 
 /*SLIDER*/
 .sliderS1 {
-    
     height: 594px;
     background-color: #f06c64;
 }
 
-.sliderS1 .slider {
-    display: flex;
+.wrapperS1 {
+    width: 1020px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.chev_leftS1 {
+.chevs {
+    display: flex;
+    position: relative;
+    width: 938px;
+    justify-content: space-between;
+    top: 281px;
+    left: 42px;
+    z-index: 100;
+}
+
+.arrows {
     width: 16px;
     height: 27px;
-    padding: 281px 0 0 42px;
 }
 
-.chev_leftS1 img:hover {
+.arrows img:hover {
     transform: scale(1.2, 1.2);
     transition: ease;
 }
 
-.chev_leftS1 img:active {
+.arrows img:active {
     transform: scale(1, 1);
     transition: ease;
 }
 
 .ViphoneS1 {
+    position: relative;
     width: 242px;
     height: 483px;
-    padding: 53px 0 0 53px;
+    top: 53px;
+    right: 36px;
+}
+
+.black-screen-v {
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 349px;
+    right: 58px;
+    width: 334px;
+    height: 189px;
+    visibility: hidden;
+}
+
+.home-btn-v {
+    position: relative;
+    bottom: 271px;
+    right: -86px;
+    width: 43px;
+    height: 43px;
 }
 
 .HiphoneS1 {
-    width: 485px;
-    height: 240px; 
-    padding: 174px 0 0 71px;
+    position: relative;
+    width: 483px;
+    height: 242px;
+    top: 174px;
+    left: 35px;
 }
 
-.chev_rightS1 {
-    width: 16px;
-    height: 27px;
-    padding: 281px 0 0 55px;
+.black-screen-h {
+    position: relative;
+    bottom: 229px;
+    left: 61px;
+    visibility: hidden;
 }
 
-.chev_rightS1 img:hover {
-    transform: scale(1.2, 1.2);
-    transition: ease;
+.home-btn-h {
+    position: relative;
+    bottom: 302px;
+    right: 329px;
+    width: 43px;
+    height: 43px;
 }
 
-.chev_rightS1 img:active {
-    transform: scale(1, 1);
-    transition: ease;
+.carousel {
+    display: flex;
+    width: 1020px;
+    overflow: hidden;
+    position: relative;
+    bottom: 27px;  
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    width: 1020px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
 }
 
 /*SLIDER BOTTOM*/
@@ -260,9 +312,9 @@
 
 /*------------------------------SINGOLO 2 --------------------------------*/
 /*--------------- PORTFOLIO---------------------*/
+
 .portfolioS2 {
     height: 863px;
-
     background-color: #2d303a;
 }
 
@@ -296,20 +348,16 @@
     padding: 29px 0 0 40px;
 }
 
-.navS2 {
-    width: 288px;
-    padding: 24px 0 0 41px;
+a.othersS2.active-portfolio {
+    color: #dedede;
 }
 
-.navS2 ul {
-    display: flex;
-    height: 23px;
-    justify-content: space-between;
+a.othersS2:not(.active-portfolio):hover {
+    cursor: pointer;
+    color: #dedede;
 }
 
-.navS2 ul li a {
-    display: block;
-    height: 21px;
+a.othersS2 {
     border-radius: 5px;
     border: 0.5px solid;
     line-height: 20px;
@@ -318,27 +366,27 @@
     font-family: "Lato";
     font-weight: 400;
     text-decoration: none;
-}
-
-.allS2 {
-    color: #dedede;
-    border-color: #dedede;   
-}
-
-.othersS2 {
     color: #767e9e;
 }
 
-.navS2 a:hover {
-    color: #dedede;
-    border-color: #dedede;
+.navS2 {
+    display: flex;
+    height: 23px;
+    justify-content: space-between;
+    width: 288px;
+    padding: 24px 0 0 41px;
 }
 
-.navS2 a:active {
+.portfolio-menu {
+    width: 288px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-menu a:active {
     transform: scale(0.95, 0.95);
     transition: ease;
 }
-
 
 .imagesPS2 {
     max-width: 1020px;
@@ -359,6 +407,11 @@
     margin-right: 20px;
     width: 220px;
     height: 187px;
+}
+
+.active-img {
+    outline: solid 5px #F06C64;
+    outline-offset: -5px;
 }
 
 .portf_bottomS2 {
@@ -675,12 +728,47 @@ h2.scolara {
     height: 33px;
 }
 
-a:active {
-    transform: scale(0.9, 0.9);
+.socialS3 img:hover {
+    transform: scale(1.2, 1.2);
     transition: ease;
 }
 
-a:hover {
-    transform: scale(1.1, 1.1);
+.socialS3 img:active {
+    transform: scale(1, 1);
     transition: ease;
 }
+
+#message-block {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0008;
+}
+
+#message-block.hidden {
+    display: none;
+}
+
+#message {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   border: 1px solid black;
+   background: #f2f2f2;
+   height: 150px;
+   width: 300px;
+   box-shadow: 0 0 5px black;
+
+}
+
+#message p {
+    color: black;
+    height: 100px;
+    width: 300px;
+    padding: 10px 0 10px 20px;
+    margin: 0;
+}
+
+
