@@ -745,6 +745,7 @@ h2.scolara {
     width: 100%;
     height: 100%;
     background: #0008;
+    z-index: 200;
 }
 
 #message-block.hidden {
@@ -753,23 +754,41 @@ h2.scolara {
 
 #message {
    position: absolute;
-   top: 50%;
-   left: 50%;
+   top: 25%;
+   left: 25%;
+   right: 25%;
+   bottom: 25%;
+   padding: 10px;
    text-align: center;
    border: 1px solid black;
+   border-radius: 25px;
    background: #f2f2f2;
-   height: 150px;
-   width: 300px;
    box-shadow: 0 0 5px black;
-
+   max-height: max-content;
 }
 
-#message p {
-    color: black;
-    height: 100px;
-    width: 300px;
-    padding: 10px 0 10px 20px;
-    margin: 0;
+h3 {
+    font-size: 36px;
+    text-align: center;
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.mes-span {
+    font-size: 14px;
+    width: 445px;
+    overflow: hidden;
+}
+
+#close-btn {
+    height: 30px;
+    width: 50px;
+    margin-bottom: 10px;
 }
 
 

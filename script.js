@@ -151,13 +151,13 @@ BUTTON.addEventListener('click', (event) => {
     } else return;
 
     if (document.getElementById('subject').value === '') {
-        document.getElementById('result1').innerText = 'Без темы';
+        document.getElementById('result1').innerText = 'Without subject';
     } else {
         document.getElementById('result1').innerText = subject;
     }
 
     if (document.getElementById('describe').value === '') {
-        document.getElementById('result2').innerText = 'Без описания';
+        document.getElementById('result2').innerText = 'Without description';
     } else {
         document.getElementById('result2').innerText = describe;
     }
