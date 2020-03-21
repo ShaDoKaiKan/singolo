@@ -9,10 +9,11 @@
     <title>Singolo</title>
 </head>
 
-<body id="home">
+<body>
 
 <!------------------------------------SINGOLO 1 --------------------------------------->
     <header class="headerS1">
+        
         <div class="wrapper">
             <div class="container">
                 <div class="logoS1">
@@ -21,19 +22,19 @@
                 
                 <nav class="navS1">
                     <div class="menu" id="menu">
-                        <a href="#home" class="nav_othersS1 active" >HOME</a>
+                        <a href="#home" class="nav_othersS1 active">HOME</a>
                         <a href="#services" class="nav_othersS1">SERVICES</a>
                         <a href="#portfolio" class="nav_othersS1">PORTFOLIO</a>
                         <a href="#about" class="nav_othersS1">ABOUT</a>
-                        <a href="#contact" class="nav_othersS1">CONTACT</a>
+                        <a href="#contact" class="nav_othersS1" id="last-child">CONTACT</a>
                         
                     </div>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="header__bottomS1">
-    </div>
+    <section id="home" class="header__bottomS1">
+    </section>
 
     <div class="sliderS1" id="sliderS1">
         <div class="wrapperS1">
@@ -46,7 +47,7 @@
                 </div>
             </div>
             <div class="carousel">
-                <div class="slider">
+                <div class="slider" id="slider-red">
                     <div class="ViphoneS1">
                         <img src="./assets/images/singolo1/Slider/iphone_vert.png" alt="Iphone_vertical">
                         <img class="black-screen-v" src="./assets/images/singolo1/Slider/Screen.png" alt="black-screen">
@@ -59,7 +60,7 @@
                     </div>
                 </div>
             
-                <div class="slider">
+                <div class="slider" id="slider-blue">
                     <img src="./assets/images/singolo1/Slider/Slider-2.png" alt="slider2">
                 </div>
             </div>
@@ -70,7 +71,7 @@
     <div class="slider__bottomS1" id="slider-bt">
     </div>
 
-    <footer id="services" class="servicesS1">
+    <section id="services" class="servicesS1">
         <div class="wrapper">
                 <div class="previewS1">
                     <h1>Our Services</h1>
@@ -149,13 +150,13 @@
                 </div>
              </div>
         </div>
-    </footer>
+    </section>
     <div class="services__bottomS1">
     </div> 
 
 <!----------------------------- SINGOLO 2 ------------------------------------------->
 
-    <div id="portfolio" class="portfolioS2">
+    <section id="portfolio" class="portfolioS2">
         <div class="wrapper">
             <div class="container">
                 <div class="contentPS2">
@@ -191,11 +192,11 @@
             </div>
         </div>
          
-    </div>
+    </section>
     <div class="portf_bottomS2"></div>
       
     
-    <div id="about" class="about_usS2">
+    <section id="about" class="about_usS2">
         <div class="wrapper">
             <div class="container">
                 <div class="contentAS2">
@@ -249,13 +250,13 @@
             </div>
         </div>
 
-    </div>
+    </section>
     <div class="about_bottomS2"></div>
     
     <!-------------------------------------- SINGOLO 3 ---------------------------------------->
     
 
-    <div class="quoteS3">
+    <section class="quoteS3">
         <div id="message-block" class="hidden">
             <div id="message">
                 <h3>The letter was sent</h3><br>
@@ -297,7 +298,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     
     <div class="bg_bottomS3"></div>
     <footer id="contact" class="footerS3">

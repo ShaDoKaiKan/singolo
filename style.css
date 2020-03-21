@@ -118,7 +118,7 @@ a.nav_othersS1 {
     justify-content: space-between;
     top: 281px;
     left: 42px;
-    z-index: 100;
+    z-index: 80;
 }
 
 .arrows {
