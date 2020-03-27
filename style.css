@@ -610,11 +610,13 @@ input {
     width: 20%;
     height: 10%;
     border-radius: 5px;
-    border-color: #f0d8d9;
-    background-color: #d6564f;
+    border-color: #FBC65F;
+    background: #FBC65F;
     font-size: 15px;
-    color: #f0d8d9;
+    color: #886A30;
     font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
     border-style: solid;
     margin-top: 5px;
 }
@@ -726,8 +728,14 @@ h4 {
 }
 
 #close-btn {
-    margin-bottom: 1%;
-    margin-left: 42%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+#close-btn:active {
+    transform: scale(0.95, 0.95);
+    transition: ease;
 }
 
 /*QUOTE BOTTOM*/
@@ -848,11 +856,13 @@ h4 {
         width: 100%;
         height: 10%;
         border-radius: 5px;
-        border-color: #f0d8d9;
-        background-color: #d6564f;
+        border-color: #FBC65F;
+        background: #FBC65F;
         font-size: 15px;
-        color: #f0d8d9;
+        color: #886A30;
         font-family: "Lato";
+        font-style: normal;
+        font-weight: bold;
         border-style: solid;
         margin-top: 5px;
     }
