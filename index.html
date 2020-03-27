@@ -19,15 +19,15 @@
             <div class="burger-line first"></div>
             <div class="burger-line second"></div>
             <div class="burger-line third"></div>
+            <div class="burger-background"></div>
             <nav class="burger-menu" id="menu">
                 <div class="burger-links">
                     <a href="#home" class="nav_othersS1 active">HOME</a>
                     <a href="#services" class="nav_othersS1">SERVICES</a>
                     <a href="#portfolio" class="nav_othersS1">PORTFOLIO</a>
                     <a href="#about" class="nav_othersS1">ABOUT</a>
-                    <a href="#contact" class="nav_othersS1" id="last-child">CONTACT</a>
+                    <a href="#contact" class="nav_othersS1" id="last-child1">CONTACT</a>
                 </div>
-                
             </nav>
         </div>
         <div class="wrapper">
@@ -40,7 +40,7 @@
                     <a href="#services" class="nav_othersS1">SERVICES</a>
                     <a href="#portfolio" class="nav_othersS1">PORTFOLIO</a>
                     <a href="#about" class="nav_othersS1">ABOUT</a>
-                    <a href="#contact" class="nav_othersS1" id="last-child">CONTACT</a>
+                    <a href="#contact" class="nav_othersS1" id="last-child2">CONTACT</a>
                 </nav>
             </div>
         </div>
@@ -48,39 +48,34 @@
 
     <section id="home" class="header__bottomS1"></section>
 
-    <div class="sliderS1" id="sliderS1">
-        <div class="wrapper">
-            <div class="container">
-                <div class="chevs">
-                    <div class="arrows">
-                        <a href="#" id="left-arrow"><img src="./assets/images/singolo1/Slider/chev@1X.png" alt="chev_left"></a>
-                    </div>
-                    <div class="arrows" style="float: right;">
-                        <a href="#" id="right-arrow"><img src="./assets/images/singolo1/Slider/chev@1X (1).png" alt="chev_right"></a>
-                    </div>
-                </div>
-                <div class="carousel container">
-                    <div class="slider row" id="slider-red">
-                        <div class="ViphoneS1 col-lg-4">
-                            <img class="Viphone" src="./assets/images/singolo1/Slider/iphone_vert.png" alt="Iphone_vertical">
-                            <img class="black-screen-v" src="./assets/images/singolo1/Slider/Screen.png" alt="black-screen">
-                            <a href="#" class="home-btn-v" id="home-btn-v"><img src="./assets/images/singolo1/Slider/home_btn.png" alt="home-button"></a> 
-                        </div>
-                        <div class="HiphoneS1 col-8">
-                            <img class="Hiphone" src="./assets/images/singolo1/Slider/iphone_horiz.png" alt="Iphone_horizontal">
-                            <img class="black-screen-h" src="./assets/images/singolo1/Slider/Screen.png" alt="black-screen">
-                            <a href="#" class="home-btn-h" id="home-btn-h"><img src="./assets/images/singolo1/Slider/home_btn.png" alt="home-button"></a> 
-                        </div>
-                    </div>
-                    <div class="slider" id="slider-blue">
-                        <img class="slide2" src="./assets/images/singolo1/Slider/Slider-2.png" alt="slider2">
-                    </div>
-                </div>
-            </div> 
-        </div>   
-    </div>
+    <div class="slider" id="sliderS1">
+        
+        <div class="slider-carousel item-container">
+            <div class="arrows">
 
-    <div class="slider__bottomS1" id="slider-bt"></div>
+                <img class="chev arrow-left arrow left" src="./assets/images/singolo1/Slider/chev@1X.png" alt="chev_left">
+                <img class="chev arrow-right arrow right" src="./assets/images/singolo1/Slider/chev@1X (1).png" alt="chev_right">
+                
+            </div>
+            <div class="slide slide-1 item active-slider">
+                <div class="iphone">
+                    <img class="V-phone phone-one" src="./assets/images/singolo1/Slider/iphone_vert.png" alt="Iphone vertical">
+                    <img class="black-screen img-one none" id="black-one" src="./assets/images/singolo1/Slider/Screen.png" alt="black-screen">
+                    <img class="slider-button button-one" src="./assets/images/singolo1/Slider/home_btn.png" alt="home-button" onclick="delWallpaperOne()">
+                
+                    <img class="H-phone phone-two" src="./assets/images/singolo1/Slider/iphone_horiz.png" alt="Iphone horizontal">
+                    <img class="black-screen img-two none" id="black-two" src="./assets/images/singolo1/Slider/Screen.png" alt="black-screen">
+                    <img class="slider-button button-two" src="./assets/images/singolo1/Slider/home_btn.png" alt="home-button" onclick="delWallpaperTwo()">
+                </div>
+                <div class="slider__bottomS1" id="slider-bt"></div>
+            </div>
+            <div class="slide slide-2 blue item">
+                <div class="iphone">
+                    <img class="blue img-three" src="./assets/images/singolo1/Slider/Slider-2.png" alt="slider2">
+                </div>
+            </div>
+        </div>       
+    </div>
 
     <section id="services" class="services">
         <div class="wrapper">
@@ -258,17 +253,19 @@
     <!-------------------------------------- SINGOLO 3 ---------------------------------------->
     
 
-    <section class="quoteS3">
+    <section class="quoteS3" id="contact">
         <div class="wrapper">
             <div class="container">
                 <div class="quote-content">
 
                     <div id="message-block" class="hidden">
-                        <div id="message">
-                            <h3>The letter was sent</h3><br>
-                            <h4>Subject:</h4><br><span class="mes-span" id="result1"></span><br><br>  
-                            <h4>Description:</h4><br><span class="mes-span" id="result2"></span><br><br> 
-                            <button id="close-btn">OK</button>
+                        <div class="message-content">
+                            <div id="message">
+                                <h3>The letter was sent</h3><br>
+                                <h4>Subject:</h4><br><span class="mes-span" id="result1"></span><br><br>  
+                                <h4>Description:</h4><br><span class="mes-span" id="result2"></span><br><br> 
+                                <button id="close-btn">OK</button>
+                            </div>
                         </div>
                     </div>
     
@@ -311,7 +308,7 @@
     
     <div class="bg_bottomS3"></div>
 
-    <footer id="contact" class="footerS3">
+    <footer class="footerS3">
         <div class="wrapper">
             <div class="container">
                 <div class="footer-content">

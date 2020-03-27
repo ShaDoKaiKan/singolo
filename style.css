@@ -90,16 +90,219 @@ a.nav_othersS1 {
 }
 
 /*--------------Slider---------------*/
-.sliderS1 {
+.slider {
     background-color: #f06c64;  
 }
 
-/*SLIDER BOTTOM*/
+.slider-carousel {
+    position: relative;
+    width: 100%;
+    max-height: 582px;
+    height: 56.3vw;
+    margin: 0 auto;
+}
+
+.none {
+    display: none;
+}
+
+.item-container {
+    overflow: hidden;
+}
+
+.arrows {
+    max-width: 1020px;
+    width: 100%;
+    top: 46%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.arrow-left {
+    left: 4.1%;
+    margin-top: 1.3%;
+}
+
+.arrow-right {
+    right: 3.8%;
+    margin-top: 1.3%;
+}
+
+.arrows img:hover {
+    cursor: pointer;
+}
+
+.arrows img:active {
+    transform: scale(0.9, 0.9);
+    transition: ease;
+}
+
+.chev {
+    position: absolute;
+    z-index: 5;
+    width: 1.6%;
+    cursor: pointer;
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide-1 {
+    background-color: #f06c64;
+    position: absolute;
+    max-height: 594px;
+    height: 100%;
+}
+
+.item {
+    display: none;
+    margin: 0 auto;
+    animation: 0.5s ease-in-out;
+}
+
+.slide-2 {
+    background-color: #648BF0;
+    position: absolute;
+    height: 100%;
+    border-bottom: 7.4px solid rgb(83, 121, 216);
+}
+
+.iphone {
+    max-width: 1020px; 
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.black-screen {
+    position: absolute;
+    z-index: 2;
+    
+}
+
+.img-one {
+    margin-top: 18.7%;
+    left: 5.1%;
+    width: 33%;
+    transform: rotate(90deg);
+}
+
+.img-two {
+    margin-top: 18.3%;
+    right: 19.5%;
+    width: 33.2%;
+}
+
+.button-one {
+    position: absolute;
+    width: 4.1%;
+    left: 19.5%;
+    margin-top: 45.4%;
+    z-index: 2;
+}
+
+.button-two {
+    position: absolute;
+    left: 42.5%;
+    margin-top: 25.5%;
+    z-index: 2;
+    width: 4.1%;
+}
+
+.phone-one {
+    position: absolute;
+    margin-top: 5.2%;
+    left: 10.9%;
+    width: 23.8%;
+}
+
+.V-phone {
+    position: absolute;
+    z-index: 1;
+}
+
+.phone-two {
+    margin-top: 17.1%;
+    right: 10.8%;
+    width: 47.6%;
+}
+
+.H-phone {
+    position: absolute;
+    z-index: 1;
+}
+
+.slide-2 img {
+    padding-top: 4.4%;
+    padding-bottom: 3%;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.slider-button:hover {
+    cursor: pointer;
+}
+
+.item.active-slider {
+    display: block;
+}
+
+.active-slider, .next {
+    display: block;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
 .slider__bottomS1 {
     height: 6px;
     background-color: #ea676b;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
-
+/*-------------------------------Services----------------------------*/
 .services {
     background-color: #f2f2f2;
 }
@@ -334,7 +537,7 @@ a.othersS2 {
 }
 
 .socialS2 img:hover {
-    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 .socialS2 img:active {
@@ -417,7 +620,7 @@ input {
 }
 
 .formS3 button:hover {
-    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 .formS3 button:active {
@@ -473,6 +676,7 @@ input {
 #message-block {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: #0008;
@@ -483,19 +687,25 @@ input {
     display: none;
 }
 
+.message-content {
+    position: relative;
+    top: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 #message {
    position: absolute;
-   top: 25%;
-   left: 25%;
-   right: 25%;
-   bottom: 25%;
-   padding: 10px;
-   text-align: center;
+   padding: 5%;
    border: 1px solid black;
    border-radius: 25px;
    background: #f2f2f2;
    box-shadow: 0 0 5px black;
    max-height: max-content;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+   width: 100%;
 }
 
 h3 {
@@ -503,6 +713,7 @@ h3 {
     text-align: center;
     font-family: "Lato";
     font-weight: 900;
+    white-space: normal;
 }
 
 h4 {
@@ -512,14 +723,11 @@ h4 {
 
 .mes-span {
     font-size: 14px;
-    width: 445px;
-    overflow: hidden;
 }
 
 #close-btn {
-    height: 30px;
-    width: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
+    margin-left: 42%;
 }
 
 /*QUOTE BOTTOM*/
@@ -554,15 +762,14 @@ h4 {
 }
 
 .socialS3 img:hover {
-    transform: scale(1.2, 1.2);
-    transition: ease;
+    cursor: pointer;
 }
 
 .socialS3 img:active {
-    transform: scale(1, 1);
+    transform: scale(0.9, 0.9);
     transition: ease;
 }
-
+/*-----------------------992px--------------------------------*/
 @media (max-width: 992px) {
     .wrapper {
         width: 100%;
@@ -585,8 +792,35 @@ h4 {
         z-index: 100;
         background-color: #2d303a;
     }
+    .formS3 button:hover {
+        transform: scale(1.0, 1.0);
+    }
 }
+/*--------------------------925px--------------------------------*/
+@media (max-width: 925px) {
+    .wrapper {
+        width: 100%;
+        max-width: 925px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 845px;
+        padding: 0;
+    }
 
+    .headerS1 {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #2d303a;
+    }
+}
+/*-------------------------------------768px---------------------------*/
 @media (max-width: 768px) {
     .wrapper {
         width: 100%;
@@ -609,12 +843,25 @@ h4 {
         z-index: 100;
         background-color: #2d303a;
     }
-}
 
-@media (max-width: 576px) {
+    .formS3 button {
+        width: 100%;
+        height: 10%;
+        border-radius: 5px;
+        border-color: #f0d8d9;
+        background-color: #d6564f;
+        font-size: 15px;
+        color: #f0d8d9;
+        font-family: "Lato";
+        border-style: solid;
+        margin-top: 5px;
+    }
+}
+/*-----------------------------------------718px----------------------------*/
+@media (max-width: 718px) {
     .wrapper {
         width: 100%;
-        max-width: 576px;
+        max-width: 718px;
         margin: 0 auto;
         position: relative;
     }
@@ -623,43 +870,7 @@ h4 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        max-width: 496px;
-        padding: 0;
-    }
-
-    .headerS1 {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background-color: #2d303a;
-    }
-
-    .contentAS2 {
-        margin-bottom: 40px;
-    }
-
-    .contentAS2 p {
-        margin-bottom: 20px;
-    }
-
-    .people {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 425px) {
-    .wrapper {
-        width: 100%;
-        max-width: 375px;
-        margin: 0 auto;
-        position: relative;
-    }
-    
-    .container{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 295px;
+        max-width: 638px;
         padding: 0;
     }
 
@@ -680,7 +891,7 @@ h4 {
 /*----------- Burger Menu -------------*/
     .burger {
         display: block;
-        width: 278px;
+        width: 100%;
         height: 71px;
         background-color: #2d303a;
         position: relative;
@@ -730,10 +941,24 @@ h4 {
         top: 45px;
     }
 
-    .burger-menu {
+    .burger-background {
         display: block;
         position: absolute;
         width: 100%;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        width: 328px;
         height: 100vh;
         bottom: 0;
         left: 0;
@@ -771,7 +996,378 @@ h4 {
 
     #check-menu:checked ~ .burger-menu {
         max-height: 100vh;
-        box-shadow: 25.5vw 6px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    #check-menu:checked ~ .burger-background {
+        max-height: 100vh;
+    }
+
+    #check-menu:checked ~ .first {
+        width: 2.5px;
+        height: 25px;
+    }
+
+    #check-menu:checked ~ .second {
+        width: 2.5px;
+        height: 25px;
+        top: 25px;
+        left: 10px;
+    }
+
+    #check-menu:checked ~ .third {
+        width: 2.5px;
+        height: 25px;
+        top: 25px;
+        left: 20px;
+    }
+/*--------------------------------------------*/
+    .contentAS2 {
+        margin-bottom: 40px;
+    }
+
+    .contentAS2 p {
+        margin-bottom: 20px;
+    }
+
+    .people {
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        justify-content: center;
+    }
+
+    .footer-content p {
+        display: none;
+    }
+}
+/*-----------------------------------659px --------------------------------*/
+@media (max-width: 659px) {
+    .wrapper {
+        width: 100%;
+        max-width: 659px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 579px;
+        padding: 0;
+    }
+
+    .headerS1 {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #2d303a;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logoS1 {
+        display: none;
+    }
+/*----------- Burger Menu -------------*/
+    .burger {
+        display: block;
+        width: 100%;
+        height: 71px;
+        background-color: #2d303a;
+        position: relative;
+    }
+
+    #check-menu {
+        display: none;
+    }
+
+    label {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding-left: 120px;
+    }
+
+    label h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 18.1048pt; 
+        font-weight: bold;
+        color: #ffffff;  
+        margin-top: 23px;
+    }
+    
+    label span {
+        color: #f06c64;
+    }
+
+    .burger-line {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 25px;
+        height: 2.5px;
+        background-color: #ffffff;
+        margin-left: 30px;
+        transition: 0.5s all;
+    }
+
+    .second {
+        top: 35px;
+    }
+
+    .third {
+        top: 45px;
+    }
+
+    .burger-background {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        width: 328px;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        text-align: -webkit-right;
+        background-color: #2d303a;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .burger-links {
+        width: 205px;
+        margin-top: 50%;
+    }
+
+    .nav_othersS1 {
+        display: block;
+        width: 205px;
+    }
+
+    .nav_othersS1:not(:first-child)::before {
+        display: none;
+    }
+
+    a.nav_othersS1 {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Lato";
+        font-weight: 700;
+        text-align: left;
+        color: #ffffff;
+        margin: 20px 0;
+    }
+
+    #check-menu:checked ~ .burger-menu {
+        max-height: 100vh;
+    }
+
+    #check-menu:checked ~ .burger-background {
+        max-height: 100vh;
+    }
+
+    #check-menu:checked ~ .first {
+        width: 2.5px;
+        height: 25px;
+    }
+
+    #check-menu:checked ~ .second {
+        width: 2.5px;
+        height: 25px;
+        top: 25px;
+        left: 10px;
+    }
+
+    #check-menu:checked ~ .third {
+        width: 2.5px;
+        height: 25px;
+        top: 25px;
+        left: 20px;
+    }
+/*--------------------------------------------*/
+    .contentAS2 {
+        margin-bottom: 40px;
+    }
+
+    .contentAS2 p {
+        margin-bottom: 20px;
+    }
+
+    .people {
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        justify-content: center;
+    }
+
+    .footer-content p {
+        display: none;
+    }
+}
+/*--------------------------------505px-------------------------------*/
+@media (max-width: 505px) {
+    .wrapper {
+        width: 100%;
+        max-width: 505px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 425px;
+        padding: 0;
+    }
+
+    .headerS1 {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #2d303a;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logoS1 {
+        display: none;
+    }
+/*----------- Burger Menu -------------*/
+    .burger {
+        display: block;
+        width: 100%;
+        height: 71px;
+        background-color: #2d303a;
+        position: relative;
+    }
+
+    #check-menu {
+        display: none;
+    }
+
+    label {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding-left: 120px;
+    }
+
+    label h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 18.1048pt; 
+        font-weight: bold;
+        color: #ffffff;  
+        margin-top: 23px;
+    }
+    
+    label span {
+        color: #f06c64;
+    }
+
+    .burger-line {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 25px;
+        height: 2.5px;
+        background-color: #ffffff;
+        margin-left: 30px;
+        transition: 0.5s all;
+    }
+
+    .second {
+        top: 35px;
+    }
+
+    .third {
+        top: 45px;
+    }
+
+    .burger-background {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        width: 328px;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        text-align: -webkit-right;
+        background-color: #2d303a;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .burger-links {
+        width: 205px;
+        margin-top: 50%;
+    }
+
+    .nav_othersS1 {
+        display: block;
+        width: 205px;
+    }
+
+    .nav_othersS1:not(:first-child)::before {
+        display: none;
+    }
+
+    a.nav_othersS1 {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Lato";
+        font-weight: 700;
+        text-align: left;
+        color: #ffffff;
+        margin: 20px 0;
+    }
+
+    #check-menu:checked ~ .burger-menu {
+        max-height: 100vh;
+    }
+
+    #check-menu:checked ~ .burger-background {
+        max-height: 100vh;
     }
 
     #check-menu:checked ~ .first {
@@ -814,10 +1410,11 @@ h4 {
     }
 }
 
-@media (max-width: 375px) {
+/*-----------------------------425px--------------------------------*/
+@media (max-width: 425px) {
     .wrapper {
         width: 100%;
-        max-width: 375px;
+        max-width: 425px;
         margin: 0 auto;
         position: relative;
     }
@@ -826,7 +1423,7 @@ h4 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        max-width: 295px;
+        max-width: 345px;
         padding: 0;
     }
 
@@ -847,7 +1444,7 @@ h4 {
 /*----------- Burger Menu -------------*/
     .burger {
         display: block;
-        width: 278px;
+        width: 100%;
         height: 71px;
         background-color: #2d303a;
         position: relative;
@@ -897,10 +1494,24 @@ h4 {
         top: 45px;
     }
 
-    .burger-menu {
+    .burger-background {
         display: block;
         position: absolute;
         width: 100%;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        width: 328px;
         height: 100vh;
         bottom: 0;
         left: 0;
@@ -938,7 +1549,194 @@ h4 {
 
     #check-menu:checked ~ .burger-menu {
         max-height: 100vh;
-        box-shadow: 25.5vw 6px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    #check-menu:checked ~ .burger-background {
+        max-height: 100vh;
+    }
+
+    #check-menu:checked ~ .first {
+        width: 2.5px;
+        height: 25px;
+    }
+
+    #check-menu:checked ~ .second {
+        width: 2.5px;
+        height: 25px;
+        top: 25px;
+        left: 10px;
+    }
+
+    #check-menu:checked ~ .third {
+        width: 2.5px;
+        height: 25px;
+        top: 25px;
+        left: 20px;
+    }
+/*--------------------------------------------*/
+    .contentAS2 {
+        margin-bottom: 40px;
+    }
+
+    .contentAS2 p {
+        margin-bottom: 20px;
+    }
+
+    .people {
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        justify-content: center;
+    }
+
+    .footer-content p {
+        display: none;
+    }
+}
+/*---------------------------------375px-------------------------------*/
+@media (max-width: 375px) {
+    .wrapper {
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 295px;
+        padding: 0;
+    }
+
+    .headerS1 {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #2d303a;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logoS1 {
+        display: none;
+    }
+/*----------- Burger Menu -------------*/
+    .burger {
+        display: block;
+        width: 100%;
+        height: 71px;
+        background-color: #2d303a;
+        position: relative;
+    }
+
+    #check-menu {
+        display: none;
+    }
+
+    label {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding-left: 120px;
+    }
+
+    label h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 18.1048pt; 
+        font-weight: bold;
+        color: #ffffff;  
+        margin-top: 23px;
+    }
+    
+    label span {
+        color: #f06c64;
+    }
+
+    .burger-line {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 25px;
+        height: 2.5px;
+        background-color: #ffffff;
+        margin-left: 30px;
+        transition: 0.5s all;
+    }
+
+    .second {
+        top: 35px;
+    }
+
+    .third {
+        top: 45px;
+    }
+
+    .burger-background {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        width: 278px;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        text-align: -webkit-right;
+        background-color: #2d303a;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .burger-links {
+        width: 205px;
+        margin-top: 50%;
+    }
+
+    .nav_othersS1 {
+        display: block;
+        width: 205px;
+    }
+
+    .nav_othersS1:not(:first-child)::before {
+        display: none;
+    }
+
+    a.nav_othersS1 {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Lato";
+        font-weight: 700;
+        text-align: left;
+        color: #ffffff;
+        margin: 20px 0;
+    }
+
+    #check-menu:checked ~ .burger-menu {
+        max-height: 100vh;
+    }
+
+    #check-menu:checked ~ .burger-background {
+        max-height: 100vh;
     }
 
     #check-menu:checked ~ .first {
