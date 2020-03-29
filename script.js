@@ -1,15 +1,22 @@
 //----------------------------------HEADER------------------------------------------------
+
+let checkbox = document.getElementById('check-menu');
 const ANCHORS = document.querySelectorAll('.nav_othersS1');
 
 for(let anchor of ANCHORS) {
     anchor.addEventListener("click", (e) => {
         const blockID = anchor.getAttribute('href');
+        
         document.querySelector(blockID).scrollIntoView({
             behavior: "smooth",
-            block: "center" 
+            block: "start" 
         });
+        if (checkbox.checked) {
+            checkbox.checked = false;
+        }
     });
 };
+
 
     
 let sections = document.querySelectorAll('section');
